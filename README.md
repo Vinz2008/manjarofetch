@@ -1,19 +1,19 @@
 # zorinfetch
 
-An extremely lightweight neofetch-like bash script, designed for Zorin OS.
+An extremely lightweight neofetch-like bash script, designed for Manjaro Linux.
 
 ![](image.png)
 
 ## Install
 
-Download, unzip and move the file "zorinfetch" to the /usr/bin directory.
+Download, unzip and move the file "manjarofetch" to the /usr/bin directory.
 ```
-sudo mv zorinfetch /usr/bin
+sudo mv manjarofetch /usr/bin
 ```
 ```
-zorinfetch
+manjarofetch
 ```
 You may now add it to your bashrc so it shows up whenever you open a terminal.
 ```
-echo -e "zorinfetch\n" >> .bashrc
+echo -e "manjarofetch\n" >> .bashrc
 ```
