@@ -1,4 +1,4 @@
-# zorinfetch
+# manjarofetch
 
 An extremely lightweight neofetch-like bash script, designed for Manjaro Linux.
 
