@@ -5,7 +5,7 @@ echo "$(tput setaf 2)  -------___||-----       $(tput setaf 6)os      $(tput set
 echo "$(tput setaf 2)  ______| __ |-----       $(tput setaf 6)host    $(tput setaf 7)$(cat /sys/devices/virtual/dmi/id/product_name) $(cat /sys/devices/virtual/dmi/id/product_version)"
 echo "$(tput setaf 2)  ______ |--||-----       $(tput setaf 6)kernel  $(tput setaf 7)$(uname -r)"
 echo "$(tput setaf 2)  ------||--||-----       $(tput setaf 6)uptime  $(tput setaf 7)$(uptime -p | cut -c 4-)"
-echo "$(tput setaf 2)  ------||--||-----       $(tput setaf 6)pkgs    $(tput setaf 7)$(dpkg-query -l | grep "^ii" | wc -l ) installed"
+echo "$(tput setaf 2)  ------||--||-----       $(tput setaf 6)pkgs    $(tput setaf 7)$( pacman -Q | wc -l) installed"
 echo "$(tput setaf 2)  ------||--||-----       $(tput setaf 6)memory  $(tput setaf 7)$(free | grep Mem | awk '{printf("%.2f", $4/$2 * 100.0)}')% free of $(free -m| grep Mem | awk '{printf($2)}')MB"
 echo "$(tput setaf 2)  ------||--||-----"
 echo ""
