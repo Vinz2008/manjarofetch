@@ -7,9 +7,9 @@ license=("GPL")
 source=("manjarofetch")
 sha512sums=("SKIP")
 package() {
-  mkdir ${pkgdir}/bin/
-  cp ${srcdir}/manjarofetch ${pkgdir}/bin/
-  chmod +x ${pkgdir}/bin/manjarofetch
+  mkdir -p "${pkgdir}/usr/bin"
+  cp "${srcdir}/manjarofetch" "${pkgdir}/usr/bin/manjarofetch"
+  chmod +x "${pkgdir}/usr/bin/manjarofetch"
 } 
 
  
